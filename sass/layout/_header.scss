@@ -1,7 +1,7 @@
-.head {
+.header {
   border-bottom: 1px solid var(--header-border-color);
 }
-.header {
+.header .container {
   display: flex;
 }
 .main-nav {
@@ -16,22 +16,22 @@
   & .item + .item {
     margin-left: 50px;
   }
-}
 
-.site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  & .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--primary-accent-color);
+    &:hover,
+    &:focus {
+      color: var(--primary-accent-color);
+    }
   }
 }
 
